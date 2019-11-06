@@ -20,5 +20,7 @@ File.open(ARGV[0], "r").each_line do
 	num = l.chomp.to_i
 	f1 = factor(num)
 	f2 = num / f1
-	puts num.to_s + "=" + f2.to_s + "*" + f1.to_s
+	if f1 != -1 then
+		puts num.to_s + "=" + f2.to_s + "*" + f1.to_s
+	end
 end
